@@ -1,0 +1,91 @@
+<style>
+	div[data-cart-info] span{
+		display:inline-block;
+		vertical-align:middle;
+
+	}
+
+	span.material-icons{
+		font-size:150px;
+
+	}
+
+	div[data-credit-card] {
+		width:435px;
+		min-height:240px;
+		border-radius:10px;
+		background-color:#5d6874;
+	}
+
+	img[data-card-type] {
+		display:block;
+		width:120px;
+		height:60px;
+	}
+
+	div[data-cc-digits] {
+		margin-top:2em;
+	}
+
+	div[data-cc-digits]input {
+		color:#fff;
+		font-size:2em;
+		line-height:2em;
+		border:none;
+		background:none;
+		margin-right:0.5em;
+	}
+
+	div[data-cc-info] {
+		margin-top:1em;
+	}
+
+	div[data-cc-info] input{
+		color:#fff;
+		font-size:1.2em;
+		border:none;
+		background:none;
+	}
+
+	div[data-cc-info] >:nth-child(2){
+		padding-right:10px;
+		float:right;
+		
+	}
+
+	button[data-pay-btn] {
+		position:fixed;
+		width:90%;
+		border:1px solid;
+		bottom:20px;
+	} 
+    </style>
+  </head>
+  <body>
+    <!-- your HTML goes here -->
+  
+	  <div data-cart-info>
+		  <h1 class = "mdc-typography--headline4">
+		  	<span class="material-icons"> shopping_cart</span> 
+		  	<span data-bill></span>
+		  </h1>
+	  </div>
+	  <div data-credit-card class="mdc-card mdc-card--outlined">
+		  <div class="mdc-card__primary-action">
+			  <img data-card-type src="https://placehold.it/120x60.png?text=Card.">
+			  <div data-cc-digits>
+				  <input type="text" size="4" placeholder="----">
+				  <input type="text" size="4" placeholder="----">
+				  <input type="text" size="4" placeholder="----">
+				  <input type="text" size="4" placeholder="----">	
+			  </div>
+
+			  <div data-cc-info>
+				  <input type="text" size="20" placeholder="Name Surname">
+				  <input type="text" size="6" placeholder="MM/YY">
+			  </div>
+		  </div>
+	  </div>
+
+	  <div data-pay-btn class="mdc-button">Pay Now</div>	  
+  </body>

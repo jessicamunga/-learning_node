@@ -1,0 +1,14 @@
+{
+  "name": "demo_code",
+  "version": "1.0.0",
+  "description": "\"my first js code\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jessica munganyinka",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.6"
+  }
+}
